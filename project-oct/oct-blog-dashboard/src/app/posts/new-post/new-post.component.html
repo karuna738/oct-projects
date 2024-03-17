@@ -10,14 +10,13 @@
             <div class="col-md-7">
                 <div class="card shadow-effect">
                     <div class="card-body">
-
                         <div class="form-group">
                             <label> Title </label>
                             <input type="text" class="form-control" >
                         </div>
                         <div class="form-group">
                             <label> Permalink </label>
-                            <input type="text" class="form-control"  name="permalink"  >
+                            <input type="text" class="form-control"  name="permalink" [disabled]="true"  >
                         </div>
                         <div class="form-group">
                             <label> Excerpt </label>
@@ -37,7 +36,6 @@
                                 <option value="" disabled> Please select a category </option>
                                 <option  value=""></option>
                             </select>
-                         
                         </div>
                         <div class="form-group">
                             <label for="" > Post Image </label>
@@ -47,7 +45,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="row mt-3 mb-5">
@@ -56,7 +53,7 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for=""> Content </label>
-                           <textarea name="" id="" cols="30" rows="10"></textarea>
+                           <angular-editor id="editor1"></angular-editor>
                         </div>
                     </div>
                 </div>
