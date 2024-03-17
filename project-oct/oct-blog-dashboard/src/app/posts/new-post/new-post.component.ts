@@ -8,12 +8,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class NewPostComponent implements OnInit {
   imgSrc: any = './assets/placeholder.svg';
-  constructor() {
-    
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(){
+ }
 
 }
